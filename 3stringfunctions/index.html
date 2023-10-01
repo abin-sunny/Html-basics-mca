@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>
+            String Functons
+        </title>
+        <script src="index.js"></script>
+    </head>
+    <body>
+       <h1 align="center">String Functons</h1>
+       <h3>Length</h3>
+       <p id="lenPara">The length of this paragraph is</p>
+       <p id="strLen"></p>
+       <button onclick="textCount()">Show Length</button>
+       <br>
+       <br>
+       <h3>Slice</h3>
+       <p id="slice">The text to be sliced is this!</p>
+       <input type="number" id="sliceNo" style="width: 50px;">
+       <button onclick="textSlice(sliceNo.value)">Slice</button>
+       <br>
+       <br>
+       <h3>Substring</h3>
+        <p id="subStr">The text for substring funcion</p>
+        <input type="number" id="s1" style="width: 50px;">
+        <input type="number" id="s2" style="width: 50px;">
+        <button onclick="subStr(s1.value,s2.value)">Sub String</button>
+        <br>
+        <br>
+        <h3>Replace</h3>
+        <p id="replacep">This is the paragraph for replaceing the text</p>
+        <textarea name="textarea" id="oldtext" cols="15" rows="1" placeholder="string to be replaced"></textarea>
+        <textarea name="textarea" id="text" cols="15" rows="1" placeholder="new string"></textarea>
+        <button type="text" onclick="replace(oldtext.value,text.value)">Replace</button>
+        <br>
+        <br>
+        <h3>Upper Case</h3>
+        <p id="upperpara">this is the paragraph for uppercase</p>
+        <button type="text" onclick="toUpper()">Upper</button>
+        <br>
+        <br>
+        <h3>Lower Case</h3>
+        <p id="lowerpara">THIS IS THE PARAGARPH FOR LOWERCASE</p>
+        <button type="text" onclick="toLower()">Lower</button>
+        <br>
+        <br>
+        <H3>Concat</H3>
+        <p id="conp">This is the paragraph for concat the text</p>
+        <textarea name="textarea" id="c1" cols="15" rows="1" placeholder="string to be replaced"></textarea>
+        <textarea name="textarea" id="c2" cols="15" rows="1" placeholder="new string"></textarea>
+        <button type="text" onclick="conCat(c1.value,c2.value)">Concat</button>
+        <br>
+        <br>
+        
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>
+            Math functions
+        </title>
+        <script src="math.js"></script>
+        <style>
+            .leftmargin{
+                margin-left: 20px;
+            }
+        </style>
+    </head>
+    <body>
+      <br>
+        <h1 align ="center">Math objects</h1>     
+        <div class ="leftmargin">
+        <h3>Math Constants</h3>
+        <h5>PI</h5>
+        <p id="pi"></p>
+        <button type="text" onclick="showPI()">Show PI</button>
+        <br>
+        <h4>Euler Number</h4>
+        <p id="euler"></p>
+        <button type="text" onclick="showEu()">show erular</button>
+        <br>
+        <br>
+        <p id="roundp"></p>
+        <input type="number" id ="round" style="width:50px">
+        <button type="text" onclick="rounds(round.value)">Round</button>
+        <br>
+        <br>
+        <p id="floorp"></p>
+        <input type="number" id ="floor" style="width:50px">
+        <button type="text" onclick="floors(floor.value)">Floor</button>
+        <br>
+        <br>
+        <p id="ceilp"></p>
+        <input type="number" id ="ceil" style="width:50px">
+        <button type="text" onclick="ceils(ceil.value)">Ceil</button>
+        <br>
+        <br>
+        <p id="truncp"></p>
+        <input type="number" id ="trunc" style="width:50px">
+        <button type="text" onclick="truncs(trunc.value)">Truncate</button>
+        <br>
+        <br>
+        <p id="powp"></p>
+        <input type="number" id ="pow" style="width:50px">
+        <input type="number" id ="pow2" style="width:50px">
+        <button type="text" onclick="pows(pow.value,pow2.value)">Pow</button>
+        <br>
+        <br>
+        <p id="sqrtp"></p>
+        <input type="number" id ="sqrt" style="width:50px">
+        <button type="text" onclick="sqrts(sqrt.value)">Sqrt</button>
+        <br>
+        <br>
+        <p id="absp"></p>
+        <input type="number" id ="abs" style="width:50px">
+        <button type="text" onclick="abss(abs.value)">Abs</button>
+        <br>
+        <br>
+
+        <p id="minp"></p>
+        <input type="number" id ="min" style="width:50px">
+        <input type="number" id ="min2" style="width:50px">
+        <button type="text" onclick="mins(min.value,min2.value)">Min</button>
+        <br>
+        <br>
+        <p id="maxp"></p>
+        <input type="number" id ="max" style="width:50px">
+        <input type="number" id ="max2" style="width:50px">
+        <button type="text" onclick="maxs(max.value,max2.value)">Max</button>
+        <br>
+        <br>
+        <p id="randomp"></p>
+        <button type="text" onclick="randoms()">Random</button>
+        <br>
+        <br>
+        </div>
+    </body>
+</html>
