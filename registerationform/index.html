@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <title>Admission</title>
+    <script src="validation.js"></script>
+    <link rel="icon" href="images/fav.png" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="nav-content">
+        <img src="images/fav.png" alt="" srcset="" />
+        <h1>MAR ATHNASIUS COLLEGE OF ENGINEERING</h1>
+        <div></div>
+    </header>
+    <br /><br />
+    <form name="myForm" onsubmit="return validateForm()" method="GET" action="details.html">
+        <h3>Personal Information</h3>
+        <label for="fnamfe">First Name</label>
+        <input type="text" name="firstname" id="fname"/>
+        <br>
+        <label for="lname">Last Name</label>
+        <input type="text" name="lastname" id="lname" />
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="emailid" id="email" />
+        <br>
+        <label for="dob">DOB</label>
+        <input type="date" name="datofbirth" id="dob" />
+        <br>
+        <label>Gender</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <br>
+        <label for="mobno">Phone</label>
+        <input type="tel" name="mob" id="mobno">
+        <br>
+        <label for="guardian">Guardian</label>
+        <input type="text" name="guardian" id="guardian" />
+        <br> <br>
+        <div class="row">
+            <div class="column">
+                <br> 
+                <label for="addr">Present Address</label>
+                <br>
+                <textarea id="addr" cols="28"  rows="5"></textarea>
+                <div class="tab"></div>
+            </div>
+             
+            <div class="column">
+                <label for="same">Same as Present Address</label>
+
+                <input type="checkbox" name="permenent" id="same" value="c" onclick="sameAddress()"><br>
+                <label for="paddr"> Permanant Address</label><br>
+                <textarea id="paddr" cols="28" rows="5"></textarea>
+            </div>
+        </div>
+        <br>
+        <br>
+        <label for="hobbies">Hobbies</label>
+        <textarea id="hobbies" placeholder="Gaming"></textarea>
+        <h3>Course Details</h3>
+        <label for="course">Choose course</label>
+        <select name="courseselect" id="course">
+            <option value="">Select course</option>
+            <option value="mca">MCA</option>
+            <option value="bca">BCA</option>
+        </select>
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>

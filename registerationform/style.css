@@ -1,0 +1,47 @@
+header {
+    height: 120px;
+    background-color: rgb(75, 82, 88);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+body {
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+}
+
+.nav-content h1 {
+    height: 0;
+    font-size: 32px;
+    color: #c7a18f;
+    top: 8px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+form{
+    padding: 20px;
+}
+
+.column{
+    float: left;
+    width: fit-content;
+    align-content: space-between;
+}
+.row{
+    display: table;
+    content: "";
+  clear: both;
+}
+.tab {
+    display: inline-block;
+    margin-left: 20px;
+}
