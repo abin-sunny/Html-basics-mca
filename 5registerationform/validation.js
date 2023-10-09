@@ -25,7 +25,7 @@ function validateForm() {
     return false;
   }
 
-  // Check if Email is empty and follows a basic email format
+  // Check if Email is empty
   if (email === "") {
     alert("Email must be filled out");
     return false;
@@ -34,13 +34,13 @@ function validateForm() {
     return false;
   }
 
-  // Check if Date of Birth is empty
+  // Check if Dob is empty
   if (dob === "") {
     alert("Date of Birth must be filled out");
     return false;
   }
 
-  // Check if Phone number is empty and follows a basic format
+  // Check if Phone number is empty
   if (mobno === "") {
     alert("Phone Number must be filled out");
     return false;
@@ -49,7 +49,7 @@ function validateForm() {
     return false;
   }
 
-  // Check if Guardian Name is empty
+  // Check if Guardian Nam
   if (guardian === "") {
     alert("Guardian Name must be filled out");
     return false;
@@ -61,7 +61,7 @@ function validateForm() {
     return false;
   }
 
-  // Check if Permanent Address is empty
+  // Check if Permanent Address
   if (!document.getElementById("samepaddrss").checked && paddr === "") {
     alert("Permanent Address must be filled out");
     return false;
@@ -78,8 +78,6 @@ function validateForm() {
     alert("Please select a course");
     return false;
   }
-
-  // If all validations pass, the form will be submitted
   return true;
 }
 
@@ -89,7 +87,7 @@ function validateEmail(email) {
   return emailPattern.test(email);
 }
 
-// Phone number validation function (basic format)
+// Phone number validation
 function validatePhone(phone) {
   var phonePattern = /^[0-9]{10}$/;
   return phonePattern.test(phone);
